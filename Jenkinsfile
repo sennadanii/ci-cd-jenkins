@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Instalação das dependências') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('Execução dos testes') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
     }
